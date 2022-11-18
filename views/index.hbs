@@ -1,0 +1,24 @@
+<h1>Files list</h1>
+
+{{#if files.length}}
+  <ul>
+    <li class="file__container">
+      <span>File ID</span>
+      <span>Parent catalog</span>
+      <span>Name</span>
+      <span>Size</span>
+      <span>Creation date</span>
+    </li>
+    {{#each files}}
+      <li class="file__container">
+        <span>{{this._id}}</span>
+        <span>{{this.parent}}</span>
+        <span>{{this.title}}</span>
+        <span>{{size}} MB</span>
+        <span>{{date}}</span>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>Files list is empty</p>
+{{/if}}

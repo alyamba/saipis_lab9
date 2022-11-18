@@ -1,0 +1,32 @@
+<nav class="blue darken-4">
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">Files</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      {{#if isIndex}}
+        <li class="active"><a href="/">Files</a></li>
+      {{else}}
+        <li><a href="/">Files</a></li>
+      {{/if}}
+
+      {{#if isCreate}}
+        <li class="active"><a href="/create">Create File</a></li>
+      {{else}}
+        <li><a href="/create">Create File</a></li>
+      {{/if}}
+
+      {{#if isEdit}}
+        <li class="active"><a href="/edit">Edit File</a></li>
+      {{else}}
+        <li><a href="/edit">Edit File</a></li>
+      {{/if}}
+
+      {{#if isRemove}}
+        <li class="active"><a href="/remove">Remove File</a></li>
+      {{else}}
+        <li><a href="/remove">Remove File</a></li>
+      {{/if}}
+
+    </ul>
+  </div>
+</nav>
